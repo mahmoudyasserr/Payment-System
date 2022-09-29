@@ -14,7 +14,7 @@
 /* definitions for CURRENTLY_RUNNING Configuration */
 #define 			GET_CARD_HOLDER_NAME_TESTING 				(0)
 #define 			GET_CARD_EXPIRY_DATE_TESTING 				(1)
-#define 			GET_CARD_PAN_TESTING 						    (2)
+#define 			GET_CARD_PAN_TESTING 						  (2)
 #define 			GET_TRANSACTION_DATE_TESTING 				(3)
 #define 			IS_CARD_EXPIRED_TESTING 					  (4)
 #define 			IS_VALID_CARD_PAN_TESTING 					(5)
