@@ -268,7 +268,7 @@ static void isValidAccountTesting(void) {
 		printf("%s\n", "Card PAN is OK");
 	}
 	status = isValidAccount(&cardData);
-	if (status == DECLINED_STOLEN_CARD) {
+	if (status == ACCOUNT_NOT_FOUND) {
 		printf("%s\n", "Invalid account");
 	} else {
 		printf("%s\n", "Valid account");
@@ -395,4 +395,3 @@ static void getTransactionTesting(void) {
 	printTransaction(&transData);
 }
 #endif
-
