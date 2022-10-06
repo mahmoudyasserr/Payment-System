@@ -109,8 +109,12 @@ void appStart(void) {
 		transactionState = receiveTransactionData(&transactionData);
 		/* saving the transaction if it is approved otherwise, close the transaction */
 		switch (transactionState) {
+		case FRAUD_CARD:
+			printf("%s\n", "This is a Fraud Card.");
+			printf("%s\n", "Transaction Failed");
+			break;
 		case DECLINED_STOLEN_CARD:
-			printf("%s\n", "Invalid account");
+			printf("%s\n", "This account is blocked.");
 			printf("%s\n", "Transaction Failed");
 			break;
 		case DECLINED_INSUFFECIENT_FUND:
@@ -128,4 +132,3 @@ void appStart(void) {
 	}
 
 }
-
